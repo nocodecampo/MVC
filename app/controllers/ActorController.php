@@ -1,8 +1,10 @@
 <?php
 
 namespace Formacom\controllers;
+
 use Formacom\Core\Controller;
 use Formacom\models\Actor;
+use Exception;
 
 class ActorController extends Controller
 {
@@ -10,7 +12,7 @@ class ActorController extends Controller
     public function index(...$params)
     {
         $actores = Actor::all();
-        echo "Hola desde index de Actor " . implode(" ", $params);
+        $this->view('actor_list', $actores);
     }
 
     public function new(...$params)
