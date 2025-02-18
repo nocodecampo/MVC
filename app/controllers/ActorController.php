@@ -1,11 +1,15 @@
 <?php
-require_once './core/Controller.php';
+
+namespace Formacom\controllers;
+use Formacom\Core\Controller;
+use Formacom\models\Actor;
 
 class ActorController extends Controller
 {
 
     public function index(...$params)
     {
+        $actores = Actor::all();
         echo "Hola desde index de Actor " . implode(" ", $params);
     }
 
