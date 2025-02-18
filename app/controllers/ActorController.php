@@ -24,4 +24,16 @@ class ActorController extends Controller
             $this->view('new_actor');
         }
     }
+
+    public function json(){
+        $actores = Actor::where("first_name", "like", "P%")->get();
+        $datos=[
+            "mensaje"=>"Listado actores empiezan por P",
+            "listado"=> $actores
+        ];
+        $json = json_encode($datos);
+        header("Content-Type: application/json");
+        echo $json;
+        exit();
+    }
 }
