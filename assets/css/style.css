@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #d5f2e3; /* Fondo verde agua clarito */
+}
+
+header{
+    padding: 16px 24px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: darkolivegreen;
+
+}
+.logo-container{
+    overflow: hidden;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+header a.logo-link{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f1e8c7;
+}
+
+.logo{
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+}
+
+.app-name {
+    font-size: 1.8rem; /* Tamaño de fuente */
+    font-weight: bold; /* Para hacerlo un poco más destacado */
+    color: #ffffff; /* Gris suave para combinar con el diseño */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.app-name:hover {
+    color: #7a9b80; /* Cambio de color al pasar el ratón */
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    padding: 120px 0 0 0;
+}
+
+.main-section{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.task-section{
+    padding: 0 32px;
+    height: 85vh;
+    overflow-x: auto;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #4e4e4e; /* Gris suave para los títulos */
+    margin-bottom: 15px;
+}
+
+* Formularios y botones */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #555;
+    box-sizing: border-box; /* Para que el padding no haga que se desborde */
+}
+
+select{
+    width: 100%;
+    padding: 8px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td a {
+    color: #8aab8f;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Enlaces */
+a {
+    color: #7a9b80; /* Verde suave */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+.dashboard-container {
+    width: 100%;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.editable{
+    max-width: 500px;
+}
